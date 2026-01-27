@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenovaCasa - Reformas e Construção Civil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="font-roboto bg-gray-50">
+    <!-- Navigation Component -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-gradient-to-r from-orange-500 to-amber-600 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 font-montserrat">Transforme seu espaço com excelência</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Soluções completas em reformas e construção civil com qualidade e compromisso</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#servicos" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium text-lg transition duration-300">Nossos Serviços</a>
+                <a href="#contato" class="border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-lg font-medium text-lg transition duration-300">Fale Conosco</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-white"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Sobre a RenovaCasa</h2>
+                    <p class="text-gray-600 mb-4 text-lg">Com mais de 15 anos de experiência no mercado, a RenovaCasa se destaca pela qualidade de seus serviços e compromisso com a satisfação dos clientes.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Nossa equipe de profissionais qualificados está pronta para transformar seus sonhos em realidade, desde pequenas reformas até grandes projetos de construção.</p>
+                    <div class="flex items-center">
+                        <div class="mr-6">
+                            <div class="text-4xl font-bold text-orange-500">15+</div>
+                            <div class="text-gray-600">Anos de experiência</div>
+                        </div>
+                        <div class="mr-6">
+                            <div class="text-4xl font-bold text-orange-500">500+</div>
+                            <div class="text-gray-600">Projetos concluídos</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-orange-500">100%</div>
+                            <div class="text-gray-600">Clientes satisfeitos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="http://static.photos/construction/640x360/1" alt="Reforma residencial" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="http://static.photos/construction/640x360/2" alt="Equipe trabalhando" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="http://static.photos/construction/640x360/3" alt="Projeto finalizado" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="http://static.photos/construction/640x360/4" alt="Detalhes da construção" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 font-montserrat">Nossos Serviços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Oferecemos soluções completas para todos os tipos de reformas e construções</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/5" alt="Reformas residenciais" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="home" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Reformas Residenciais</h3>
+                        </div>
+                        <p class="text-gray-600">Transformamos sua casa dos sonhos em realidade com projetos personalizados e execução impecável.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/6" alt="Reformas comerciais" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="briefcase" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Reformas Comerciais</h3>
+                        </div>
+                        <p class="text-gray-600">Criamos ambientes comerciais funcionais e atrativos que refletem a identidade da sua marca.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/7" alt="Construção civil" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="layers" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Construção Civil</h3>
+                        </div>
+                        <p class="text-gray-600">Executamos projetos de construção do zero, com qualidade, segurança e dentro do prazo.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/8" alt="Design de interiores" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="pen-tool" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Design de Interiores</h3>
+                        </div>
+                        <p class="text-gray-600">Projetos personalizados que combinam funcionalidade, conforto e estética para seu espaço.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/9" alt="Elétrica e hidráulica" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="tool" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Elétrica e Hidráulica</h3>
+                        </div>
+                        <p class="text-gray-600">Instalações e manutenções realizadas por profissionais qualificados, garantindo segurança e eficiência.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/construction/640x360/10" alt="Consultoria técnica" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="clipboard" class="text-orange-500"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 font-montserrat">Consultoria Técnica</h3>
+                        </div>
+                        <p class="text-gray-600">Assessoria especializada para orientar suas decisões em projetos de construção e reforma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-orange-500 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 font-montserrat">O que nossos clientes dizem</h2>
+                <p class="max-w-2xl mx-auto text-lg opacity-90">Depoimentos de quem já confiou em nosso trabalho</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Cliente 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos Silva</h4>
+                            <div class="flex text-amber-200">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"A RenovaCasa transformou completamente meu apartamento. O projeto ficou exatamente como eu sonhava e o trabalho foi realizado dentro do prazo combinado. Recomendo!"</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Cliente 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Paula Oliveira</h4>
+                            <div class="flex text-amber-200">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Contratei a RenovaCasa para reformar meu escritório e fiquei impressionada com a qualidade do trabalho. A equipe foi extremamente profissional e atenciosa em todos os detalhes."</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Cliente 3" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Roberto Santos</h4>
+                            <div class="flex text-amber-200">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="italic">"Fiz uma grande reforma na minha casa com a RenovaCasa e o resultado superou todas as expectativas. Profissionais competentes e honestos, que cumpriram exatamente o que foi combinado."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Entre em Contato</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Estamos prontos para transformar seu projeto em realidade. Entre em contato para um orçamento sem compromisso.</p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Telefone</h3>
+                                <p class="text-gray-600">(11) 9999-9999</p>
+                                <p class="text-gray-600">(11) 8888-8888</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Email</h3>
+                                <p class="text-gray-600">contato@renovacasa.com.br</p>
+                                <p class="text-gray-600">orcamentos@renovacasa.com.br</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="map-pin" class="text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Endereço</h3>
+                                <p class="text-gray-600">Rua das Construções, 123</p>
+                                <p class="text-gray-600">Centro - São Paulo/SP</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 font-montserrat">Horário de Funcionamento</h3>
+                        <div class="flex justify-between border-b border-gray-200 py-3">
+                            <span class="text-gray-600">Segunda a Sexta</span>
+                            <span class="font-medium">08:00 - 18:00</span>
+                        </div>
+                        <div class="flex justify-between border-b border-gray-200 py-3">
+                            <span class="text-gray-600">Sábado</span>
+                            <span class="font-medium">09:00 - 13:00</span>
+                        </div>
+                        <div class="flex justify-between py-3">
+                            <span class="text-gray-600">Domingo</span>
+                            <span class="font-medium">Fechado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 font-montserrat">Solicite um Orçamento</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Nome Completo</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 mb-2">Serviço de Interesse</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="residencial">Reforma Residencial</option>
+                                    <option value="comercial">Reforma Comercial</option>
+                                    <option value="construcao">Construção Civil</option>
+                                    <option value="design">Design de Interiores</option>
+                                    <option value="eletrica">Elétrica e Hidráulica</option>
+                                    <option value="consultoria">Consultoria Técnica</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
