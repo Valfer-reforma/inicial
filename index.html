@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RenovaCasa - Reformas e Construção Civil</title>
+    <title>Valfer - Reforma com Método</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -14,14 +14,43 @@
 </head>
 <body class="font-roboto bg-gray-50">
     <!-- Navigation Component -->
-    <custom-navbar></custom-navbar>
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                    <span class="text-white font-bold text-xl">F</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">VALFER</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-800 hover:text-amber-500 font-medium transition-slow">Início</a>
+                <a href="#" class="text-gray-800 hover:text-amber-500 font-medium transition-slow">Sobre Nós</a>
+                <a href="#" class="text-gray-800 hover:text-amber-500 font-medium transition-slow">Projetos</a>
+                <a href="#" class="text-gray-800 hover:text-amber-500 font-medium transition-slow">Serviços</a>
+                <a href="#" class="text-gray-800 hover:text-amber-500 font-medium transition-slow">Contato</a>
+            </nav>
+            
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-amber-500 transition-slow"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-amber-500 transition-slow"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-600 hover:text-amber-500 transition-slow"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-gray-600 hover:text-amber-500 transition-slow"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <button class="md:hidden text-gray-800">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
 
     <!-- Hero Section -->
-    <section class="relative h-screen bg-gradient-to-r from-orange-500 to-amber-600 flex items-center justify-center overflow-hidden">
+    <section class="relative h-screen bg-gradient-to-r from-blue-500 to-green-600 flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-black opacity-30"></div>
         <div class="container mx-auto px-6 relative z-10 text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 font-montserrat">Transforme seu espaço com excelência</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Soluções completas em reformas e construção civil com qualidade e compromisso</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 font-montserrat">Obra sem susto começa com planejamento</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Unimos administração e construção civil para planejar reformas com cronograma definido, controle de custos e acompanhamento técnico do início ao fim.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#servicos" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium text-lg transition duration-300">Nossos Serviços</a>
                 <a href="#contato" class="border-2 border-white hover:bg-white hover:text-orange-600 px-8 py-3 rounded-lg font-medium text-lg transition duration-300">Fale Conosco</a>
@@ -35,12 +64,19 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Sobre a RenovaCasa</h2>
-                    <p class="text-gray-600 mb-4 text-lg">Com mais de 15 anos de experiência no mercado, a RenovaCasa se destaca pela qualidade de seus serviços e compromisso com a satisfação dos clientes.</p>
-                    <p class="text-gray-600 mb-6 text-lg">Nossa equipe de profissionais qualificados está pronta para transformar seus sonhos em realidade, desde pequenas reformas até grandes projetos de construção.</p>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-montserrat">Sobre a Valfer</h2>
+                    <p class="text-gray-600 mb-4 text-lg">A Valfer nasce da união entre dois mundos que sempre fizeram parte da mesma história:
+                    a organização e a construção.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Filho de uma enfermeira e de um profissional da construção civil, desde cedo esteve presente em obras, acompanhando de perto a rotina, os desafios e, principalmente, os problemas recorrentes do setor. Ainda jovem, escolheu a Administração como formação inicial, desenvolvendo uma visão estratégica, focada em planejamento, controle e gestão de recursos.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Apesar disso, a construção civil sempre chamou mais atenção.
+                    Para compreender o setor de forma técnica e aprofundada, buscou a formação em Técnico em Edificações, passando a enxergar com clareza os principais gargalos das reformas: falta de planejamento, estouros de orçamento, atrasos no cronograma e impactos diretos no custo final da obra.</p>
+                    <p class="text-gray-600 mb-6 text-lg">A Valfer surge exatamente para resolver esse problema.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Mais do que executar reformas, a empresa foi criada para planejar, organizar e conduzir obras com método, conciliando conhecimento técnico da construção civil com princípios sólidos de administração. Cada projeto é tratado com cronograma definido, controle de custos e acompanhamento constante, garantindo previsibilidade, transparência e tranquilidade ao cliente.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Aqui, reforma não é improviso.
+                    É decisão, planejamento e execução responsável — para que não haja sustos, atrasos ou arrependimentos.</p>                    
                     <div class="flex items-center">
                         <div class="mr-6">
-                            <div class="text-4xl font-bold text-orange-500">15+</div>
+                            <div class="text-4xl font-bold text-orange-500">11+</div>
                             <div class="text-gray-600">Anos de experiência</div>
                         </div>
                         <div class="mr-6">
